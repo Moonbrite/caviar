@@ -1,0 +1,355 @@
+/*===================================================
+    Global Variables
+*/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+h1 {
+  color: #10069f;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 1.8rem;
+  padding: 40px 0 70px 0;
+  text-shadow: 1px 1px 1px #10069f;
+}
+h1::after {
+  content: "";
+  width: 70px;
+  height: 2px;
+  display: block;
+  background-color: #10069f;
+  margin: auto;
+  margin-top: 6px;
+}
+
+h2 {
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+/*===================================================
+    Navigation
+*/
+header .nav-one a {
+  text-transform: uppercase;
+  color: #10069f !important;
+  white-space: nowrap;
+}
+header .nav-one a:hover {
+  font-weight: 600;
+}
+header .nav-one a img {
+  transform: rotate(0deg);
+  transition: 1s ease-in-out;
+}
+header .nav-one a img:hover {
+  transform: rotate(360deg) scale(1.3);
+  transition: 1s ease-in-out;
+}
+header .nav-two a {
+  color: #10069f !important;
+  text-transform: capitalize;
+}
+header .nav-two li {
+  padding: 0px 5px;
+}
+
+/*===================================================
+    Slider
+*/
+#sliders {
+  overflow: hidden;
+  position: relative;
+}
+#sliders .livraison {
+  position: absolute;
+  z-index: 1;
+  top: 22%;
+  text-align: center;
+  width: 100%;
+  opacity: 1;
+  visibility: visible;
+}
+#sliders .livraison p {
+  color: #fff;
+  font-size: 1.3rem;
+  text-shadow: 1px 1px 2px #10069f;
+}
+#sliders .livraison .bg-blanc-trans {
+  background-color: rgba(255, 255, 255, 0.4941176471);
+  width: 33%;
+  margin: auto;
+  min-width: 637px;
+}
+#sliders .livraison .bg-blanc-trans h2 {
+  padding-top: 10px;
+  font-weight: 600;
+  font-size: 1.6rem;
+  line-height: 35px;
+  text-shadow: 1px 1px 2px #fff;
+}
+#sliders .livraison .bg-blanc-trans a {
+  color: black;
+  padding: 10px 25px;
+  background: #fff;
+  display: inline-block;
+  text-decoration: none;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  transition: 0.4s ease-in-out;
+}
+#sliders .livraison .bg-blanc-trans a:hover {
+  background-color: #10069f;
+  color: #fff;
+  transition: 0.4s ease-in-out;
+}
+
+/*===================================================
+    Product
+*/
+#produit {
+  background-color: #f4f4f4;
+}
+#produit .les-produits {
+  transition: 0.6s ease-in-out;
+}
+#produit img {
+  transition: 0.5s ease-in-out;
+}
+#produit img:hover {
+  transform: scale(1.4) translate(30px);
+  filter: brightness(0.6);
+  transition: 0.5s ease-in-out;
+}
+#produit p {
+  text-transform: uppercase;
+  color: #10069f;
+  text-align: center;
+  padding: 15px 0;
+  background-color: #fff;
+  transition: 0.3s ease-in-out;
+}
+#produit p:hover {
+  background-color: #10069f;
+  color: #fff;
+  transition: 0.5s ease-in-out;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/*===================================================
+    Ventes
+*/
+#meilleures-ventes p {
+  margin-bottom: 0;
+  padding: 20px 60px;
+}
+#meilleures-ventes a {
+  font-weight: 600;
+}
+#meilleures-ventes .recette-bg,
+#meilleures-ventes .conseil-bg {
+  transition: 0.5s ease-in-out;
+}
+#meilleures-ventes .recette-bg:hover,
+#meilleures-ventes .conseil-bg:hover {
+  transition: 0.5s ease-in-out;
+  box-shadow: 1px 9px 37px 5px rgba(0, 0, 0, 0.72);
+}
+#meilleures-ventes img {
+  transition: 0.5s ease-in-out;
+}
+#meilleures-ventes img:hover {
+  filter: brightness(0.6);
+  transition: 0.5s ease-in-out;
+}
+#meilleures-ventes .bg-ventes {
+  background-image: url(../image/map.png);
+  background-size: 100%;
+  min-height: 800px;
+}
+#meilleures-ventes .bg-ventes h2 {
+  text-shadow: 1px 1px 1px #10069f;
+}
+#meilleures-ventes .bg-ventes a {
+  color: #fff;
+  text-transform: uppercase;
+}
+#meilleures-ventes .bg-ventes .conseil {
+  width: 50%;
+}
+#meilleures-ventes .bg-ventes .conseil img {
+  position: absolute;
+  margin-top: 50px;
+}
+#meilleures-ventes .bg-ventes .conseil .conseil-bg {
+  position: relative;
+  background-color: #10069f;
+  color: #fff;
+  text-align: center;
+  width: 400px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  top: 181px;
+  left: 144px;
+}
+#meilleures-ventes .bg-ventes .conseil .conseil-bg h2 {
+  text-shadow: 1px 1px 1px #fff;
+}
+#meilleures-ventes .bg-ventes .conseil h2 {
+  color: #fff;
+  font-size: 1.6rem;
+}
+#meilleures-ventes .bg-ventes .conseil h2::after {
+  content: "";
+  width: 70px;
+  height: 2px;
+  display: block;
+  background-color: #fff;
+  margin: auto;
+  margin-top: 6px;
+}
+#meilleures-ventes .recette {
+  width: 50%;
+  position: relative;
+}
+#meilleures-ventes .recette img {
+  margin-top: 150px;
+  margin-left: 110px;
+  margin-bottom: 50px;
+}
+#meilleures-ventes .recette .recette-bg {
+  background-color: #fff;
+  width: 350px;
+  color: #10069f;
+  text-align: center;
+  position: absolute;
+  z-index: 10;
+  left: -71px;
+  top: 45px;
+  height: 375px;
+}
+#meilleures-ventes .recette .recette-bg h2 {
+  font-size: 1.6rem;
+}
+#meilleures-ventes .recette .recette-bg h2::after {
+  content: "";
+  width: 70px;
+  height: 2px;
+  display: block;
+  background-color: #10069f;
+  margin: auto;
+  margin-top: 6px;
+}
+#meilleures-ventes .recette .recette-bg a {
+  color: #10069f;
+}
+
+#engagements {
+  background-color: #f4f4f4;
+}
+#engagements p {
+  color: #10069f;
+}
+
+footer {
+  background-color: #10069f;
+  color: #fff;
+}
+footer h3 {
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  cursor: default;
+}
+footer h4 {
+  font-size: 1rem;
+  padding-bottom: 5px;
+}
+footer p {
+  margin-bottom: 0;
+  padding: 3px 0;
+}
+footer ul {
+  padding-left: 0;
+}
+footer ul li {
+  padding: 5px 0;
+}
+footer ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+@media (min-width: 1400px) {
+  .les-produits {
+    margin-top: -20vh;
+    position: relative;
+    transition: 0.6s ease-in-out;
+  }
+}
+@media (max-width: 1400px) {
+  #meilleures-ventes .les-ventes {
+    justify-content: center;
+    align-items: center;
+  }
+  #meilleures-ventes .conseil {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    position: relative;
+    margin-top: -64px;
+  }
+  #meilleures-ventes .conseil .conseil-bg {
+    left: 0 !important;
+    top: 85px !important;
+  }
+  #meilleures-ventes .conseil img {
+    margin-top: 0 !important;
+    top: 68px;
+  }
+  #meilleures-ventes .recette {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    position: relative;
+    padding-bottom: 200px;
+  }
+  #meilleures-ventes .recette .recette-bg {
+    width: 400px;
+    height: 500px;
+    left: 0px !important;
+    top: 157px !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative !important;
+  }
+  #meilleures-ventes .recette img {
+    position: absolute;
+    top: -14px;
+    margin-left: 0 !important;
+  }
+}
+@media (max-width: 1200px) {
+  .les-ventes {
+    flex-direction: column;
+  }
+  .bg-ventes {
+    margin-top: 0px;
+  }
+}
+@media (max-width: 900px) {
+  #sliders .livraison {
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s ease-in-out;
+  }
+}/*# sourceMappingURL=style.css.map */
