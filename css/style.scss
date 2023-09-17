@@ -10,6 +10,7 @@ $break-point-xl: 1200px;
 * {
     margin: 0;
     padding: 0;
+
 }
 
 ul {
@@ -154,18 +155,25 @@ header {
 #produit {
     background-color: $background-color-gris;
 
-    .les-produits {
-        transition: 0.6s ease-in-out;
+
+    .cartes {
+        &:hover img {
+            transform: scale(1.4)translate(30px);
+            filter: brightness(0.65);
+            transition: 0.5s linear;
+        }
+
+        &:hover p {
+            background-color: $color-primary;
+            color: $color-secondary;
+            transition: .5s ease-in-out;
+            font-weight: 600;
+            cursor: pointer;
+        }
     }
 
     img {
         transition: 0.5s ease-in-out;
-
-        &:hover {
-            transform: scale(1.4)translate(30px);
-            filter: brightness(0.6);
-            transition: 0.5s ease-in-out;
-        }
     }
 
     p {
@@ -175,14 +183,6 @@ header {
         padding: 15px 0;
         background-color: $color-secondary;
         transition: .3s ease-in-out;
-
-        &:hover {
-            background-color: $color-primary;
-            color: $color-secondary;
-            transition: .5s ease-in-out;
-            font-weight: 600;
-            cursor: pointer;
-        }
     }
 
 
@@ -257,6 +257,7 @@ header {
                 justify-content: center;
                 top: 181px;
                 left: 144px;
+                z-index: 200;
 
                 h2 {
                     text-shadow: 1px 1px 1px $color-secondary;
@@ -360,6 +361,10 @@ footer {
             a {
                 color: $color-secondary;
                 text-decoration: none;
+
+                &:hover {
+                    font-weight: 700;
+                }
             }
         }
     }
