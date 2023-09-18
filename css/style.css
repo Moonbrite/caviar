@@ -1,6 +1,3 @@
-/*===================================================
-    Global Variables
-*/
 * {
   margin: 0;
   padding: 0;
@@ -251,6 +248,9 @@ header .nav-two li {
   color: #10069f;
 }
 
+/*===================================================
+    Engagements
+*/
 #engagements {
   background-color: #f4f4f4;
 }
@@ -258,6 +258,24 @@ header .nav-two li {
   color: #10069f;
 }
 
+.insta {
+  width: 159px;
+  height: 105px;
+  position: absolute;
+  top: 40px;
+  left: -94px;
+  background-color: blue;
+  display: flex;
+  align-items: flex-start;
+}
+.insta img {
+  width: 100px;
+  padding-top: 5px;
+}
+
+/*===================================================
+    FOOTER
+*/
 footer {
   background-color: #10069f;
   color: #fff;
@@ -289,6 +307,9 @@ footer ul li a:hover {
   font-weight: 700;
 }
 
+/*===================================================
+    Media Queries
+*/
 @media (min-width: 1400px) {
   .les-produits {
     margin-top: -20vh;
@@ -297,6 +318,9 @@ footer ul li a:hover {
   }
 }
 @media (max-width: 1400px) {
+  .insta {
+    display: none;
+  }
   #meilleures-ventes .les-ventes {
     justify-content: center;
     align-items: center;

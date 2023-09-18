@@ -1,46 +1,5 @@
-/*===================================================
-    Global Variables
-*/
-$color-primary : #10069f;
-$color-secondary : #fff;
-$background-color-gris : #f4f4f4;
-$break-point-xxl :1400px;
-$break-point-xl: 1200px;
-
-* {
-    margin: 0;
-    padding: 0;
-
-}
-
-ul {
-    list-style: none;
-}
-
-h1 {
-    color: $color-primary;
-    text-transform: uppercase;
-    font-weight: 400;
-    font-size: 1.8rem;
-    padding: 40px 0 70px 0;
-    text-shadow: 1px 1px 1px $color-primary;
-
-    &::after {
-        content: "";
-        width: 70px;
-        height: 2px;
-        display: block;
-        background-color: $color-primary;
-        margin: auto;
-        margin-top: 6px;
-    }
-}
-
-h2 {
-    font-weight: 400;
-    text-transform: uppercase;
-}
-
+@use "variables"as *;
+@use "global"as *;
 
 /*===================================================
     Navigation
@@ -140,8 +99,6 @@ header {
             }
         }
     }
-
-
 }
 
 
@@ -184,8 +141,6 @@ header {
         background-color: $color-secondary;
         transition: .3s ease-in-out;
     }
-
-
 }
 
 /*===================================================
@@ -320,9 +275,12 @@ header {
                 color: $color-primary;
             }
         }
-
     }
 }
+
+/*===================================================
+    Engagements
+*/
 
 #engagements {
     background-color: $background-color-gris;
@@ -330,7 +288,28 @@ header {
     p {
         color: $color-primary;
     }
+
 }
+
+.insta {
+    width: 159px;
+    height: 105px;
+    position: absolute;
+    top: 40px;
+    left: -94px;
+    background-color: blue;
+    display: flex;
+    align-items: flex-start;
+
+    img {
+        width: 100px;
+        padding-top: 5px;
+    }
+}
+
+/*===================================================
+    FOOTER
+*/
 
 footer {
     background-color: $color-primary;
@@ -370,15 +349,24 @@ footer {
     }
 }
 
+/*===================================================
+    Media Queries
+*/
+
 @media (min-width: $break-point-xxl) {
     .les-produits {
         margin-top: -20vh;
         position: relative;
         transition: 0.6s ease-in-out;
     }
+
 }
 
 @media (max-width:$break-point-xxl) {
+
+    .insta {
+        display: none;
+    }
 
     #meilleures-ventes {
         .les-ventes {
@@ -449,5 +437,4 @@ footer {
             transition: .5s ease-in-out;
         }
     }
-
 }
